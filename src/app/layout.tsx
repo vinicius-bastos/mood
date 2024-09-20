@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
-import { Fugaz_One, Inter } from "next/font/google"
+import { Fugaz_One, Open_Sans } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const openSans = Open_Sans({ subsets: ["latin"] })
 const fugaz = Fugaz_One({
   subsets: ["latin"],
   weight: "400"
@@ -37,7 +37,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`w-full max-w-[1000px] mx-auto text-sm
-          sm:text-base min-h-screen flex flex-col ${inter.className}` }
+          sm:text-base min-h-screen flex flex-col text-slate-800 ${openSans.className}` }
       >
         {header}
         {children}
