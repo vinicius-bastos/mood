@@ -1,11 +1,13 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
-  "rules": {
-    "semi": ["error", "never"],
-    "quotes": ["error", "double"],
-    "max-line-length": {
-      "options": [80],
-      "severity": "error"
+  "overrides": [
+    {
+      "files": ["*.tsx"],
+      "rules": {
+        "semi": ["error", "never"],
+        "quotes": ["error", "double"],
+        "max-len": ["error", { "code": 100 }]
+      }
     }
-  }
+  ]
 }

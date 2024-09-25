@@ -24,12 +24,15 @@ export default function RootLayout({
     <header className="p-4 sm:p-8 flex items-center
     justify-between gap-4">
       <h1 className={`text-base sm:text-lg textGradient ${fugaz.className}`}>Mood</h1>
+      <div className="flex items-center justify-between">
+        PLACEHOLDER CTA OR STATS
+      </div>
     </header>
   )
 
   const footer = (
-    <footer className="p-4 sm:p-8">
-      footer
+    <footer className="p-4 sm:p-8 grid place-content-center">
+      <p className={`text-indigo-500 ${fugaz.className}`}>Create with 💛</p>
     </footer>
   )
 
